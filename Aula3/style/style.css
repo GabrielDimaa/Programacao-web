@@ -1,0 +1,88 @@
+* {
+    font-family: 'Josefin Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    margin: 0;
+}
+
+.app {
+    display: grid;
+    grid-template-rows: 160px 1fr 80px;
+    grid-template-columns: 210px 1fr;
+    grid-template-areas: 
+        "header header"
+        "nav section"
+        "footer footer";
+}
+
+.header {
+    grid-area: header;
+    background: linear-gradient(to right, #ED6B86, #ca0028)
+}
+
+.header h1 {
+    color: rgb(211, 204, 195);
+    font-size: 2.2rem;
+}
+
+.nav {
+    background-color: #1c1d1d;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.nav-container a {
+    padding: 15px;
+    font-size: 1.1rem;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a:hover {
+    background-color: #f5879d;
+    border-radius: 8px;
+}
+
+.section {
+    grid-area: section;
+    background-color: rgb(241, 241, 241);
+}
+
+.section .section-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.section .section-div > h2 {
+    text-align: start;
+    margin-left: 50px;
+    font-size: 2.2rem;
+}
+
+.section .section-div > p {
+    text-align: start;
+    justify-content: start;
+    font-size: 1.3rem;
+    margin-left: 20px;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #6D435A;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
